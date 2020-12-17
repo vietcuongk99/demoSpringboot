@@ -1,5 +1,4 @@
-package model;
-
+package com.example.demo.model;
 
 import javax.persistence.*;
 
@@ -19,16 +18,6 @@ public class Tutorial {
 
     @Column(name = "published")
     private boolean published;
-
-    public Tutorial() {
-
-    }
-
-    public Tutorial(String title, String description, boolean published) {
-        this.title = title;
-        this.description = description;
-        this.published = published;
-    }
 
     public long getId() {
         return id;
@@ -63,4 +52,3 @@ public class Tutorial {
         return "Tutorial [id=" + id + ", title=" + title + ", desc=" + description + ", published=" + published + "]";
     }
 }
-
